@@ -15,13 +15,8 @@ export class ItemComponent implements OnInit {
   subject: any;
 
   constructor(
-    private tarefasService: TarefasService,
-    private fb: FormBuilder
+    private tarefasService: TarefasService
   ) { }
-
-  profileForm = this.fb.group({
-    firstName: ['']
-  })
 
 
   ngOnInit(): void {
