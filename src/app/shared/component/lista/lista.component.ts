@@ -10,20 +10,14 @@ import { TarefasService } from '../../tarefasService/tarefas.service';
 export class ListaComponent implements OnInit {
 
   @Input() lista: string[] = [];
-  @Output() listar = new EventEmitter<any>() ;
   
   constructor(
-    private tarefaService: TarefasService
     ) { }
     
     
     ngOnInit(): void {
     }
     
-    deletar() {
-      // ...Executar processo de deletar item da lista;
-      this.listar.emit('');
-    }
 
 
 }
